@@ -1,63 +1,13 @@
-# AidConnect---Disaster-Resource-and-Relief-Management-System
-AidConnect - Disaster Resource and Relief Management System
-A comprehensive web-based system for managing disaster relief operations, connecting volunteers, and coordinating resources during emergencies.
+# **AidConnect---Disaster-Resource-and-Relief-Management-System**
+**AidConnect** is a web-based disaster relief management system designed to coordinate emergency response efficiently by connecting users, volunteers, managers, and admins. Common users can request help from disaster zones, while volunteers register, accept assignments, and update their work status. Managers oversee relief centers and coordinate operations, and admins control the entire system including users and requests.
 
-Features
-User Management
-Common Users: Can request relief assistance from disaster zones
-Volunteers: Can register, view assignments, and update status
-Managers: Manage relief centers and coordinate local operations
-Admins: Control system-wide requests and user management
-Core Functionality
-Disaster zone relief request system
-Volunteer management and assignment
-Resource tracking and donation management
-Analytics dashboard with real-time statistics
-Multi-level authentication and authorization
-Technology Stack
-Frontend: HTML5, CSS3, JavaScript
-Backend: PHP 8.0+
-Database: MySQL 8.0+
-Additional: Bootstrap 5, Chart.js for analytics
-Setup Instructions
-Database Setup
+The system includes core features such as disaster relief requests, volunteer assignment, resource and donation tracking, and a real-time analytics dashboard. It also supports multi-level authentication to ensure secure role-based access.
 
-CREATE DATABASE aidconnect;
-USE aidconnect;
-Import Database Schema
+AidConnect is built using **HTML, CSS, JavaScript** for the frontend, **PHP** for backend logic, and **MySQL** for database management. Bootstrap improves UI design and Chart.js is used for analytics visualization.
 
-Run the SQL commands in database/schema.sql
-Import sample data from database/sample_data.sql
-Configure Database Connection
+Setup involves creating the database, importing schema and sample data, configuring database credentials, and running the project on a local or web server like XAMPP. Users access the system via `index.php` using default login credentials.
 
-Update config/database.sample.php with your MySQL credentials
-Web Server Configuration
+The project structure includes folders for assets, configuration files, database scripts, PHP includes, application pages, uploads, and the main entry file. Security features include password hashing, session management, SQL injection prevention, XSS protection, and role-based access control.
 
-Place files in your web server directory (e.g., htdocs for XAMPP)
-Ensure PHP and MySQL are running
-Access the System
+Overall, AidConnect is a secure, scalable system for managing disaster relief operations and improving coordination during emergencies.
 
-Navigate to index.php in your browser
-Default admin credentials: admin@aidconnect.com / admin123
-Directory Structure
-aidconnect/
-├── assets/          # CSS, JS, images
-├── config/          # Database and configuration files
-├── database/        # SQL schema and sample data
-├── includes/        # PHP includes and functions
-├── pages/           # Main application pages
-├── uploads/         # File uploads
-└── index.php        # Main entry point
-Default Users
-Admin: admin@aidconnect.com / admin123
-Manager: manager@aidconnect.com / manager123
-Volunteer: volunteer@aidconnect.com / volunteer123
-User: user@aidconnect.com / user123
-Security Features
-Password hashing with bcrypt
-Session management
-SQL injection prevention
-XSS protection
-Role-based access control
-License
-This project is created for educational and demonstration purposes.
